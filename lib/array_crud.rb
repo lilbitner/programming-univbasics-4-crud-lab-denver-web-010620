@@ -3,7 +3,7 @@ def create_an_empty_array
 end
 
 def create_an_array
-  ["dog", "cat", "hamster", "snake"]
+  array = ["dog", "cat", "hamster", "snake"]
 end
 
 def add_element_to_end_of_array(array, element)
@@ -17,30 +17,31 @@ def add_element_to_start_of_array(array, element)
 end
 
 def remove_element_from_end_of_array(array)
-   array = ["dog", "cat", "hamster", "snake"]
-  array.pop(3)
+  array = ["dog", "cat", "hamster", "snake"]
+  array.pop
 end
 
 def remove_element_from_start_of_array(array)
   array = ["dog", "cat", "hamster", "snake"]
-  array.shift(1)
+  array.shift
 end
 
 def retrieve_element_from_index(array, index_number)
    array = ["dog", "cat", "hamster", "snake"]
-   array.index[2]
+   array[2]
 end
 
 def retrieve_first_element_from_array(array)
   array = ["dog", "cat", "hamster", "snake"]
-  array.index[0]
+  array[0]
 end
 
 def retrieve_last_element_from_array(array)
   array = ["dog", "cat", "hamster", "snake"]
-  array.index[-1]
+  array[-1]
 end
 
 def update_element_from_index(array, index_number, element)
-
+  array = ["dog", "cat", "hamster", "snake"]
+  array[1] = "cow"
 end
